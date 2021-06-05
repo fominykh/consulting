@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Open Sans'
+  font-style: normal
+  font-weight: 400
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff')
+}
+
+body
+    font-family: 'Open sans', Arial, sans-serif
+    font-size: 16px
+
+
+.container
+    max-width: 1350px!important
+
+.header_logo
+    width: 200px
+
+
+.main
+    background-color: #333333
+    padding: 100px 0 0 0
+
+
+
+.main_subtitle
+    opacity: 0.7
+    width: 600px
+    margin: 0 auto
+    @media screen and ( max-width: 768px )
+        width: 100%
+
+
+.main_item
+    background:
+        position: center
+        size: cover
+        repeat: no-repeat
+    padding: 40px 30px
+    height: 332px
+    position: relative
+    color: #ffffff
+    z-index: 0
+    box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.2)
+    transition: all 0.1s ease
+    margin-bottom: 10px
+    @media screen and ( max-width: 960px  )
+        height: auto
+
+    &_overlay
+        background: rgba(0,0 ,0 ,0.6)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+        transition: all 0.2s ease
+
+    &_title
+        font:
+            size: 25px
+            weight: 500
+
+
+    &_subtitle
+        opacity: 0.6
+        margin-top: 30px
+        transition: all 0.2s ease
+
+
+.main_item:hover
+    outline: 1px solid #FFB800
+    .main_item_overlay
+        background: rgba(0,0 ,0 ,0.7)
+    .main_item_subtitle
+        opacity: 0.7
+
+
+
+h1
+    font:
+        size: 35px
+        weight: 700
+    text-align: center
+
+
+.footer
+    color: #ffffff
+    background: #333145
+    font-size: 14px
+
+.platform
+    padding: 120px 0 0 0
+    background-color: #333145
+    color: #ffffff
+    &_img
+        width: 100%
+    &_title
+        font:
+            size: 35px
+            weight: 700
+    &_subtitle
+        opacity: 0.7
+
+.team
+    background-color: #333145
+    text-align: center
+    padding: 120px 0 0 0
+    color: #ffffff
+
+    &_title
+        font:
+            size: 35px
+            weight: 700
+
+    &_subtitle
+        opacity: 0.7
+
+
+.header_menu
+    list-style: none
+    margin: 0
+    li
+        margin-right: 15px
+        a
+            color: #000000
+
+
+.footer
+    padding: 100px 0 50px 0
+
+
+.header_mail
+    color: #000000
+
+.sec_title
+    font:
+        size: 35px
+        weight: 700
+    color: #fff
+
+.contacts
+    padding-top: 100px
+    background-color: #333145
+    color: #ffffff
+    a
+        color: #ffffff
+
+.m_menu i
+    font-size: 25px
+    cursor: pointer
+
+.m_menu_nav
+    list-style: none
+    display: none
+    li
+        margin-bottom: 20px
+        a
+            color: #000000
+            font-size: 20px
+
+.m_icon_mail
+    color: #000000
+    font-size: 25px
+
+@import '_media.sass'
